@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/findmypast-oss/clear-port/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/clear-port.js",
   "scripts": {
     "test": "jest"
