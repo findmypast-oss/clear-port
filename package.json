@@ -1,24 +1,32 @@
 {
   "name": "clear-port",
-  "version": "1.0.0",
   "description": "Clear a hogged port on any platform",
-  "main": "src/clear-port.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "license": "MIT",
+  "homepage": "https://github.com/findmypast-oss/clear-port#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/findmypast-oss/clear-port.git"
   },
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/findmypast-oss/clear-port/issues"
   },
-  "homepage": "https://github.com/findmypast-oss/clear-port#readme",
-  "devDependencies": {
-    "jest": "^24.1.0"
+  "version": "1.0.0",
+  "main": "src/clear-port.js",
+  "scripts": {
+    "test": "jest"
   },
   "dependencies": {
     "tree-kill": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-findmypast": "^1.1.10",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.4",
+    "prettier": "^1.16.4",
+    "prettier-package-json": "^2.1.0"
   }
 }

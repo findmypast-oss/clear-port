@@ -1,0 +1,11 @@
+{
+  "concurrent": false,
+  "linters": {
+    "**/package.json": ["prettier-package-json --write", "git add"],
+    "*.js": [
+      "eslint --fix --quiet",
+      "prettier --config ./.prettierrc --write",
+      "git add"
+    ]
+  }
+}
