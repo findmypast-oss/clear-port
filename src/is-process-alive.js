@@ -1,11 +1,20 @@
 const { promisify } = require('util');
 const exec = promisify(require('child_process').exec);
 
+/**
+ * @param {number} pid
+ * @returns {Promise<boolean>} True if process is alive, false if process is dead
+ */
 async function isProcessAlive(pid) {
   await new Promise(resolve => setTimeout(resolve, 2000));
   return getIsProcessAliveFromShell(process.platform, pid);
 }
 
+/**
+ * @param {string} platform
+ * @param {number} pid
+ * @returns {Promise<boolean>} True if process is alive, false if process is dead
+ */
 async function getIsProcessAliveFromShell(platform, pid) {
   try {
     const commandToRun = getShellCommandForPlatform(platform, pid);
@@ -16,6 +25,11 @@ async function getIsProcessAliveFromShell(platform, pid) {
   }
 }
 
+/**
+ * @param {string} platform
+ * @param {string} shellOutput
+ * @returns {boolean} True if process is alive, false if process is dead
+ */
 function getIsProcessAliveFromShellOutput(platform, shellOutput) {
   switch (platform) {
     case 'win32':
@@ -25,6 +39,11 @@ function getIsProcessAliveFromShellOutput(platform, shellOutput) {
   }
 }
 
+/**
+ * @param {string} platform
+ * @param {number} pid
+ * @returns {string} Shell command that gets PID information for platform
+ */
 function getShellCommandForPlatform(platform, pid) {
   switch (platform) {
     case 'win32':
