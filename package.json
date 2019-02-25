@@ -2,6 +2,9 @@
   "name": "clear-port",
   "version": "1.0.0",
   "description": "Clear a hogged port on any platform",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/findmypast-oss/clear-port.git"
@@ -10,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/findmypast-oss/clear-port/issues"
   },
-  "homepage": "https://github.com/findmypast-oss/clear-port#readme"
+  "homepage": "https://github.com/findmypast-oss/clear-port#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
 }
