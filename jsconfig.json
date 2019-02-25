@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "lib": ["es2018"],
+    "target": "ES2017"
+  },
+  "exclude": ["./**/*.spec.js"]
+}
