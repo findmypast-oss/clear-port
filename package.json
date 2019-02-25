@@ -2,6 +2,7 @@
   "name": "clear-port",
   "version": "1.0.0",
   "description": "Clear a hogged port on any platform",
+  "main": "src/clear-port.js",
   "scripts": {
     "test": "jest"
   },
@@ -16,5 +17,8 @@
   "homepage": "https://github.com/findmypast-oss/clear-port#readme",
   "devDependencies": {
     "jest": "^24.1.0"
+  },
+  "dependencies": {
+    "tree-kill": "^1.2.1"
   }
 }
